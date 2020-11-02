@@ -1,0 +1,3 @@
+[1102/004654.875:ERROR:registration_protocol_win.cc(103)] CreateFile: Den angivne fil blev ikke fundet. (0x2)
+[1102/004655.124:ERROR:registration_protocol_win.cc(103)] CreateFile: Den angivne fil blev ikke fundet. (0x2)
+[1102/005001.473:ERROR:registration_protocol_win.cc(103)] CreateFile: Den angivne fil blev ikke fundet. (0x2)

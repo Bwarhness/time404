@@ -123,6 +123,10 @@
           }
         }
       }
-    }},
-  "defaultProject": "time404"
+    }
+  },
+  "defaultProject": "time404",
+  "cli": {
+    "analytics": "52e195f2-34fa-43fa-b453-bf76fdc832bc"
+  }
 }

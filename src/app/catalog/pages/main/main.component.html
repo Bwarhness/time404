@@ -1,0 +1,10 @@
+<div class="threads">
+  <a class="thread" *ngFor="let thread of $threads |async" [routerLink]="['/player', thread.no]" >
+{{thread.sub}} <br>
+{{thread.com}}<br>
+{{thread.no}}<br>
+
+images: {{thread.images}}<br>
+replies: {{thread.replies}}
+  </a>
+</div>

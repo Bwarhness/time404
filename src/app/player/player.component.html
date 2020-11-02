@@ -1,0 +1,14 @@
+
+<ng-container *ngIf="$posts | async as posts">
+  <ng-container *ngIf="$currentPost | async as currentPost">
+    <p>currentPost! - {{currentPost.com}}</p>
+    <video class="player" preload="metadata" [src]="'//is2.4chan.org/gif/'+ currentPost.tim +'.webm'" controls autoplay (ended)="playNextVideo(posts, currentPost)" (error)="playNextVideo(posts, currentPost)" >
+    </video>
+  </ng-container>
+  <ng-container *ngIf="$nextPosts | async as nextPosts">
+    <div class="next-posts">
+      <video *ngFor="let item of nextPosts" preload="metadata" (click)="goToVideo(item)"  [src]="'//is2.4chan.org/gif/'+ item.tim +'.webm'"></video>
+    </div>
+  </ng-container>
+</ng-container>
+
